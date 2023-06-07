@@ -3,4 +3,4 @@ project(SimpleHTTPServerCpp)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(SimpleHTTPServerCpp src/main.cpp)
+add_executable(SimpleHTTPServerCpp src/main.cpp include/HTTPPortListener.h include/HTTPMessageReceiver.h)
