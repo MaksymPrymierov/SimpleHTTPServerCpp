@@ -1,7 +1,13 @@
-#include <iostream>
-#include <boost/beast.hpp>
+#include <HTTPServer.h>
 
 int main() {
-    std::cout << "SimpleHTTPServerCpp" << std::endl;
+
+    std::string ip = "127.0.0.1";
+    unsigned short port = 8080;
+
+    SimpleHTTPServer::HTTPServer server(ip, port);
+
+    server.start();
+
     return 0;
 }
