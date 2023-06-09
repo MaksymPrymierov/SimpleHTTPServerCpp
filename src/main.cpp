@@ -7,6 +7,7 @@ int main() {
 
     SimpleHTTPServer::HTTPServer server(ip, port);
 
+    server.set_message("SimpleHTTPServerCpp");
     server.start();
 
     return 0;

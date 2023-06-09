@@ -14,9 +14,12 @@ namespace SimpleHTTPServer {
 
         void start();
 
+        void set_message(const std::string &_message);
+
     private:
         net::io_context m_ioc{1};
         tcp::acceptor m_acceptor;
+        std::string m_message;
     };
 
 }
