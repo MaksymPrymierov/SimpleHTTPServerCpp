@@ -8,8 +8,6 @@ conan_basic_setup()
 
 add_executable(SimpleHTTPServerCpp
         src/main.cpp
-        include/HTTPPortListener.h
-        include/HTTPMessageReceiver.h
         include/HTTPServer.h src/HTTPServer.cpp)
 
 target_include_directories(SimpleHTTPServerCpp PUBLIC ./include)
