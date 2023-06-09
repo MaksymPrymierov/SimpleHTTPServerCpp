@@ -8,7 +8,7 @@ conan_basic_setup()
 
 add_executable(SimpleHTTPServerCpp
         src/main.cpp
-        include/HTTPServer.h src/HTTPServer.cpp)
+        include/HTTPServer.h src/HTTPServer.cpp include/HTTPClient.h src/HTTPClient.cpp)
 
 target_include_directories(SimpleHTTPServerCpp PUBLIC ./include)
 
