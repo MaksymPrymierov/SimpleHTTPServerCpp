@@ -27,7 +27,7 @@ namespace SimpleHTTPServer {
                 http::read(socket, buffer, req);
 
                 http::response<http::string_body> res{http::status::ok, req.version()};
-                res.set(http::field::server, BOOST_BEAST_VERSION_STRING);
+                res.set(http::field::server, server_name);
                 res.set(http::field::content_type, "text/plain");
                 res.body() = m_message.c_str();
                 res.prepare_payload();

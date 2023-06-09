@@ -16,6 +16,8 @@ namespace SimpleHTTPServer {
 
         void set_message(const std::string &_message);
 
+        static constexpr std::string_view server_name{"SimpleHTTPServer[Server]"};
+
     private:
         net::io_context m_ioc{1};
         tcp::acceptor m_acceptor;
